@@ -1,66 +1,36 @@
 # Note by Note
 
-A responsive nonprofit website for **Note by Note**, an initiative that collects used musical instruments and helps place them with students in underresourced schools.
+A responsive multi-page nonprofit website for **Note by Note**, an initiative that collects used musical instruments and helps place them with students in underresourced schools.
 
-## Files
+## Website pages
 
-- `index.html` — website content and structure
-- `styles.css` — design and responsive styling
-- `script.js` — mobile navigation and demo form behavior
+- `index.html` — Home
+- `about.html` — Mission / About
+- `how-it-works.html` — Donation process
+- `donate.html` — Donate an instrument
+- `request.html` — Request an instrument
+- `founder.html` — Founder page for Jitong Lei
+- `contact.html` — Get involved / Contact
+- `styles.css` — shared design and responsive styling
+- `script.js` — shared navigation and demo form behavior
+- `logo-note-by-note.png` — official Note by Note logo
+- `founder-jitong-lei.jpg` — founder photo
 
-## Publish with GitHub Pages
+## Preview privately
 
-1. Create a new GitHub repository.
-2. Upload all three website files to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`.
-6. Save. GitHub will provide the public URL.
+Download the repository to your computer and double-click `index.html`. All page links work locally, so you can move between pages without publishing the site.
 
-## Customize before launch
+## Publish later with GitHub Pages
 
-Search `index.html` for these placeholders:
+When you are ready, upload all files to the repository root, then enable GitHub Pages in **Settings → Pages**.
 
-- `Your Name, Founder`
-- `hello@notebynote.org`
-- `@notebynote`
-- `YOUR PHOTO`
+## Forms
 
-### Add your founder photo
+The donation and request forms are front-end demos. Before launch, connect them to Formspree, Google Forms, or another form service.
 
-Place your image in this folder, for example `founder.jpg`, then replace the whole:
 
-```html
-<div class="photo-placeholder">...</div>
-```
+## Live form submissions
 
-with:
+The Donate and Request forms now submit through FormSubmit to `notebynote222@gmail.com`.
 
-```html
-<img class="founder-image" src="founder.jpg" alt="Founder of Note by Note">
-```
-
-Then add this to `styles.css`:
-
-```css
-.founder-image {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 190px 190px 26px 26px;
-}
-```
-
-## Make the forms actually send responses
-
-The current forms are front-end demos. For a no-backend GitHub Pages site, connect them to a service such as Formspree or embed a Google Form.
-
-## Suggested future pages
-
-- Instrument impact stories
-- School partners
-- Volunteer / repair partner sign-up
-- Donation FAQ
-- Instrument wish list
-- Photo gallery
-- Annual impact counter
+On the first test submission, FormSubmit will send an activation email to `notebynote222@gmail.com`. Open that email and confirm the form before public submissions will be delivered.

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Note by Note gives used musical instruments a second life by placing them in the hands of students at underresourced schools." />
-  <title>Home | Note by Note</title>
+  <title>Donate | Note by Note</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -34,53 +34,52 @@
 </header>
 <main>
 
-<section class="hero page-home">
-  <div class="hero-notes note-one">♪</div>
-  <div class="hero-notes note-two">♫</div>
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">MUSIC SHOULD BE WITHIN REACH</p>
-      <h1>Give an instrument.<br><span>Open a world.</span></h1>
-      <p class="hero-text">
-        Note by Note gives used musical instruments a second life by placing them
-        in the hands of students at underresourced schools.
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">DONATE AN INSTRUMENT</p>
+    <h1>Your old instrument could become someone else's beginning.</h1>
+    <p>Tell us what you would like to donate and we can follow up about next steps.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container form-layout">
+    <div class="form-intro">
+      <p class="eyebrow">WHAT WE ACCEPT</p>
+      <h2>Pass the music on.</h2>
+      <p>
+        Flutes, clarinets, trumpets, violins, guitars, and more can all find a new home.
       </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="donate.html">Donate an Instrument</a>
-        <a class="button button-secondary" href="request.html">Request an Instrument</a>
-      </div>
-      <div class="mini-proof">
-        <div>
-          <strong>1 instrument</strong>
-          <span>can become a student's first chance to play.</span>
-        </div>
+      <div class="accepted-box">
+        <strong>Examples we may accept</strong>
+        <p>Band instruments · Orchestra instruments · Guitars · Cases · Stands · Accessories</p>
       </div>
     </div>
-    <div class="hero-art" aria-label="Note by Note logo">
-      <div class="logo-showcase">
-        <img src="logo-note-by-note.png" alt="Note by Note: Give an instrument. Open a world.">
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="mission-strip">
-  <div class="container mission-strip-grid">
-    <p>REUSE.</p><span>✦</span><p>RESTORE.</p><span>✦</span><p>REDISTRIBUTE.</p><span>✦</span><p>REIMAGINE ACCESS.</p>
-  </div>
-</section>
-
-<section class="section home-intro">
-  <div class="container centered narrow">
-    <p class="eyebrow">WHAT WE DO</p>
-    <h2>Old instruments. New beginnings.</h2>
-    <p class="section-subtitle">
-      We collect used instruments, help prepare them for new musicians, and connect them with students and schools that need them.
-    </p>
-    <div class="cta-row">
-      <a href="about.html" class="button button-secondary">Learn About Our Mission</a>
-      <a href="how-it-works.html" class="button button-primary">See How It Works</a>
-    </div>
+    <form class="card-form" id="donationForm" action="https://formsubmit.co/notebynote222@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Note by Note Instrument Donation">
+      <input type="hidden" name="_template" value="table">
+      <div class="two-col">
+        <label>Your name<input type="text" name="name" placeholder="First and last name" required></label>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+      </div>
+      <label>Instrument<input type="text" name="instrument" placeholder="e.g. Flute, violin, trumpet" required></label>
+      <label>Condition
+        <select name="condition" required>
+          <option value="">Choose one</option>
+          <option>Ready to play</option>
+          <option>May need a tune-up</option>
+          <option>Needs repair</option>
+          <option>Not sure</option>
+        </select>
+      </label>
+      <label>Tell us about the instrument
+        <textarea name="details" rows="5" placeholder="Brand, approximate age, condition, included case/accessories, etc."></textarea>
+      </label>
+      <button class="button button-primary full" type="submit">Start My Donation</button>
+      <p class="form-note">Your submission will be sent directly to Note by Note.</p>
+      
+    </form>
   </div>
 </section>
 

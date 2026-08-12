@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Note by Note gives used musical instruments a second life by placing them in the hands of students at underresourced schools." />
-  <title>Home | Note by Note</title>
+  <title>Request an Instrument | Note by Note</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -34,53 +34,33 @@
 </header>
 <main>
 
-<section class="hero page-home">
-  <div class="hero-notes note-one">♪</div>
-  <div class="hero-notes note-two">♫</div>
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">MUSIC SHOULD BE WITHIN REACH</p>
-      <h1>Give an instrument.<br><span>Open a world.</span></h1>
-      <p class="hero-text">
-        Note by Note gives used musical instruments a second life by placing them
-        in the hands of students at underresourced schools.
+<section class="page-hero request-page-head">
+  <div class="container narrow">
+    <p class="eyebrow">FOR SCHOOLS & STUDENTS</p>
+    <h1>Need an instrument?</h1>
+    <p>Educators, music programs, and students can tell us what they need.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container request-card">
+    <div>
+      <p class="eyebrow light-eyebrow">REQUEST AN INSTRUMENT</p>
+      <h2>Tell us what would help.</h2>
+      <p>
+        We will do our best to match requests with available donations as instruments become available.
       </p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="donate.html">Donate an Instrument</a>
-        <a class="button button-secondary" href="request.html">Request an Instrument</a>
-      </div>
-      <div class="mini-proof">
-        <div>
-          <strong>1 instrument</strong>
-          <span>can become a student's first chance to play.</span>
-        </div>
-      </div>
     </div>
-    <div class="hero-art" aria-label="Note by Note logo">
-      <div class="logo-showcase">
-        <img src="logo-note-by-note.png" alt="Note by Note: Give an instrument. Open a world.">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="mission-strip">
-  <div class="container mission-strip-grid">
-    <p>REUSE.</p><span>✦</span><p>RESTORE.</p><span>✦</span><p>REDISTRIBUTE.</p><span>✦</span><p>REIMAGINE ACCESS.</p>
-  </div>
-</section>
-
-<section class="section home-intro">
-  <div class="container centered narrow">
-    <p class="eyebrow">WHAT WE DO</p>
-    <h2>Old instruments. New beginnings.</h2>
-    <p class="section-subtitle">
-      We collect used instruments, help prepare them for new musicians, and connect them with students and schools that need them.
-    </p>
-    <div class="cta-row">
-      <a href="about.html" class="button button-secondary">Learn About Our Mission</a>
-      <a href="how-it-works.html" class="button button-primary">See How It Works</a>
-    </div>
+    <form class="request-form" id="requestForm" action="https://formsubmit.co/notebynote222@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Note by Note Instrument Request">
+      <input type="hidden" name="_template" value="table">
+      <input aria-label="Name" type="text" name="name_or_school" placeholder="Your name / school" required>
+      <input aria-label="Email" type="email" name="email" placeholder="Email address" required>
+      <input aria-label="Requested instrument" type="text" name="instrument_needed" placeholder="Instrument needed" required>
+      <textarea aria-label="Request details" name="request_details" rows="4" placeholder="Tell us about the student or music program and what is needed."></textarea>
+      <button class="button button-light" type="submit">Submit a Request</button>
+      
+    </form>
   </div>
 </section>
 
